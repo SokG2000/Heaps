@@ -1,0 +1,8 @@
+n - количество запросов
+n строк с запросами
+0 - is_empty()
+1 x - insert(x)
+2 - get_min()
+3 - extract_min()
+4 i - delete element, inserted in i-th insert
+5 i x - change element, inserted in i-th insert, to x
