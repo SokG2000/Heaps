@@ -10,7 +10,6 @@ using std::vector;
 using std::ifstream;
 using std::ofstream;
 using std::string;
-const int test_num = 1;
 ifstream fin;
 
 struct fatal_error{};
