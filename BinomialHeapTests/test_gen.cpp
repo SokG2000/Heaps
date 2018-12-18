@@ -160,7 +160,7 @@ int main() {
         } else if (i < small_test_num) {
             n = 1000;
         } else {
-            n = 1000000;
+            n = 100000;
         }
         if (i % 2 == 0) {
             change_test_gen(n);

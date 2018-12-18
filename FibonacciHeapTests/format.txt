@@ -1,0 +1,10 @@
+n - количество запросов
+n строк с запросами
+0 heap_id - is_empty() in heap heap_id
+1 heap_id x - insert(x) in heap heap_id
+2 heap_id - get_min() in heap heap_id
+3 heap_id - extract_min() in heap heap_id
+4 heap_id i - delete element, inserted in i-th insert in heap heap_id (this element must be in this heap)
+5 heap_id i x - decrease element, inserted in i-th insert, to x in heap heap_id (this element must be in this heap)
+6 - create new empty heap
+7 id1 id2 - heap[id1].merge(heap[id2])

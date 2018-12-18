@@ -5,6 +5,6 @@ n строк с запросами
 2 heap_id - get_min() in heap heap_id
 3 heap_id - extract_min() in heap heap_id
 4 heap_id i - delete element, inserted in i-th insert in heap heap_id (this element must be in this heap)
-5 heap_id i x - change element, inserted in i-th insert, to x in heap heap_id (this element must be in this heap) (or decrease in Fibonacci heap)
+5 heap_id i x - change element, inserted in i-th insert, to x in heap heap_id (this element must be in this heap)
 6 - create new empty heap
 7 id1 id2 - heap[id1].merge(heap[id2])

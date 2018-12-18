@@ -58,8 +58,8 @@ class Vector {
         }
         Vector () {
             sz = 0;
-            max_sz = 1;
-            arr = new Key[1];
+            max_sz = 0;
+            arr = nullptr;
         }
         ~Vector() {
             delete[] arr;
@@ -78,8 +78,9 @@ class Vector {
         }
         void push_back(Key x) {
             if (sz == max_sz) {
-                reallocation(max_sz * big);
+                reallocation(max_sz * big + 1);
             }
+            //new (arr + sz) Key(x);
             *(arr + sz) = x;
             sz++;
         }

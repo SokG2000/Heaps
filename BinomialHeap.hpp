@@ -135,10 +135,12 @@ class BinomialHeap {
             Node* tmp = adding_heap.roots[0];
             Pointer p(tmp);
             (adding_heap.roots[0])->back_pointer = p.node;
+            //adding_heap.print();
             merge(adding_heap);
             return p;
         }
         Key extract_min() {
+            //cout << sz << '\n';
             if (sz == 0) {
                 throw std::out_of_range("Can not extract minimum from empty heap.");
             }
@@ -247,6 +249,7 @@ class BinomialHeap {
         void node_push_back(Node* node1, Node* node2) {
             if (node1 == node2) {
                 cerr << "Can not push_back equal node\n";
+                cerr << node1 << ' ' << node2 << '\n';
                 throw ("Can not push_back equal node");
             }
             node2->parent = node1;
