@@ -360,13 +360,13 @@ int main() {
     const int small_test_num = 10;
     const int test_num = 30;
     for (int i = 1; i <= small_test_num; i++) {
-        file_name = "BinomialHeapTests\\" + to_string(i) + ".txt";
+        file_name = "FibonacciHeapTests\\" + to_string(i) + ".txt";
         fin.open(file_name);
         check_correct(i);
         fin.close();
     }
     for (int i = 1; i <= test_num; i++) {
-        file_name = "BinomialHeapTests\\" + to_string(i) + ".txt";
+        file_name = "FibonacciHeapTests\\" + to_string(i) + ".txt";
         fin.open(file_name);
         check_time(i);
         fin.close();
